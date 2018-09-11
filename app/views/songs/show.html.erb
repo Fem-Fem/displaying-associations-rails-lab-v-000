@@ -7,8 +7,8 @@
     <li>
       <% x = song.artist.name + " - " + song.title %>
       <%= link_to x, song_path(song.artist) %>
-      <%= link_to x, artist_path(song) %>
       <%= binding.pry %>
+      <%= link_to x, artist_path(song) %>
     </li>
   <% end %>
 </ul>
