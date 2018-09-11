@@ -3,9 +3,11 @@ class SongsController < ApplicationController
   end
 
   def show
+    @songs = Song.all
   end
 
   def new
+    @song = Song.new
   end
 
   def create
